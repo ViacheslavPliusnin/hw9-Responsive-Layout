@@ -96,6 +96,7 @@ header p {
     background-color: white;
     grid-template-columns: 1fr 1fr;
     z-index: 2;
+    box-shadow: 0 10px 30px #757575;
 }
 .card .card-item:last-child {
     background-color: #EEEEEE;
@@ -200,12 +201,15 @@ input:checked + .slider:before {
     border-radius: 50%;
 }
 video {
+    width: 50%;
     outline: none;
     position: relative;
     margin-left: 37.361%;
     top: -31px;
     height: 36.869%;
     z-index: 1;
+    border: 1px solid white;
+    box-shadow: 0 10px 30px #757575;
 }
 .text-content {
     width: 50%;
