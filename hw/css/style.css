@@ -20,9 +20,9 @@ header {
     display: flex;
     flex-direction: column;
     background-color: #F4F6F9;
-    background-image: url(../assets/img/header_background.png);
+    background-image: url(../assets/img/backgrounds/section1/background.png);
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: right top;
 }
 .header-logo {
     display: flex;
@@ -56,7 +56,7 @@ h1 {
     line-height: 1.32;
     font-family: 'Lato', sans-serif;
     font-weight: bold;
-    font-size: 36px;
+    font-size: 2.5vw;
     color: #333333;
     width: 37.916%;
 }
@@ -66,16 +66,22 @@ header p {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     color: #4F4F4F;
-    font-size: 18px;
     width: 31.458%;
 }
-
 .what-it-does {
     display: flex;
     flex-direction: row;
-    background-image: url(../assets/img/background_gradient.png), url(../assets/img/what-it-does_background.png);
-    background-repeat: no-repeat;
-    background-position: top left;
+}
+.section2-background {
+    position: absolute;
+    left: 0;
+    z-index: -999;
+}
+.section2-gradient {
+    transform: translateX(1px);
+}
+.section2-background-mobile {
+    display: none;
 }
 .visual-content {
     width: 50%;
@@ -129,7 +135,7 @@ header p {
     margin-top: 13.63px;
     margin-left: 15.74px;
     margin-bottom: 10.68px;
-    font-size: 18.88px;
+    font-size: 1.311vw;
     color: #4F4F4F
 }
 .card-images {
@@ -198,6 +204,7 @@ video {
     position: relative;
     margin-left: 37.361%;
     top: -31px;
+    height: 36.869%;
     z-index: 1;
 }
 .text-content {
@@ -218,7 +225,7 @@ h4 {
 h2 {
     font-family: 'Lato', sans-serif;
     font-weight: bold;
-    font-size: 28px;
+    font-size: 1.945vw;
     line-height: 1.32;
     color: #333333;
 }
@@ -257,7 +264,8 @@ p {
     transition: ease-in-out 0.5s;
 }
 .interface {
-    background-image: url(../assets/img/interface-background.png);
+    background-image: url(../assets/img/backgrounds/section3/interface-background.png);
+    background-color: white;
     background-position: right top;
     background-repeat: no-repeat;
 }
@@ -473,7 +481,7 @@ p {
     transition: ease-in-out 0.5s;
 }
 .teamup {
-    background-image: url(..//assets/img/teamup_background.png);
+    background-image: url(..//assets/img/backgrounds/section7/teamup_background.png);
     background-position: top left;
     background-repeat: no-repeat;
 }
@@ -559,6 +567,9 @@ h5 {
     transition: ease-in-out 0.3s;
     box-shadow: 0 0 10px 3px rgba(128, 128, 128, 0.651);
 }
+.teamup-background-mobile {
+    display: none;
+}
 footer {
     background-color: #00ADEE;
 }
@@ -603,6 +614,224 @@ nav a:hover {
     transform: scale(1.2);
     transition: ease-in-out 0.4s;
 }
+@media (min-width: 2180px) {
+    p {
+        font-size: 20px;
+    }
+}
+@media (max-width: 1230px) {
+    .header-logo {
+        margin-left: 3%;
+    }
+    h1 {
+        margin-left: 3%;
+    }
+    header p {
+        margin-left: 3%;
+    }
+    .download-buttons {
+        margin-left: 3%;
+    }
+    .interface {
+        background-image: url(../assets/img/backgrounds/section3/interface-background2.png);
+    }
+    .interface-content {
+        margin-left: 3%;
+    }
+    .interface-content h4 {
+        margin-top: 167px;
+    }
+    .interface-content a {
+        margin-bottom: 121px;
+    }
+    .teamup {
+        background-image: url(..//assets/img/backgrounds/section7/teamup_background1.png);
+    }
+    .teamup .download-buttons {
+        margin-bottom: 50px;
+    }
+    .footer_content {
+        margin-left: 3%;
+    }
+}
+@media (max-width: 1130px) {
+    header {
+        background-image: url(../assets/img/backgrounds/section1/background_1.png);
+    }
+    .card-data {
+        font-size: 12px;
+    }
+    .card-matchup {
+        font-size: 14px;
+    }
+    .card-type {
+        font-size: 11px;
+    }
+    .card-notification {
+        font-size: 11px;
+    }
+    video {
+        height: 30%;
+    }
+    .carousel-item p {
+        font-size: 12px;
+    }
+    .previous {
+        left: -10.6%;
+    }
+}
+@media (max-width: 1050px) {
+    header {
+        background-image: url(../assets/img/backgrounds/section1/background_2.png);
+    }
+    .arsenal {
+        width: 60px;
+    }
+    .chelsea {
+        width: 71px;
+    }
+    .next {
+        right: -7.4%;
+    }
+    .channels {
+        gap: 0%;
+        justify-content: space-around;
+    }
+    .footer_content {
+        gap: 14%;
+    }
+}
+@media (max-width: 900px) {
+    header {
+        background-image: url(../assets/img/backgrounds/section1/background_3.png);
+    }
+    .card-data {
+        font-size: 11px;
+    }
+    .card-matchup {
+        font-size: 13px;
+    }
+    .card-type {
+        font-size: 10px;
+    }
+    .arsenal {
+        width: 50px;
+    }
+    .chelsea {
+        width: 59px;
+        left: -5px;
+    }
+    .switch {
+        margin-right: 18.02px;
+        width: 18.74px;
+        height: 8.63px;
+    }
+    .slider:before {
+        height: 14.38px;
+        width: 14.38px;
+        left: -4px;
+        bottom: -2.5px;
+    }
+    input:checked + .slider:before {
+        -webkit-transform: translateX(12px);
+        -ms-transform: translateX(12px);
+        transform: translateX(12px);
+    }
+    video {
+        height: 25%;
+    }
+    .teamup {
+        background-image: url(..//assets/img/backgrounds/section7/teamup_background2.png);
+    }
+    .teamup h2 {
+        margin-top: 50px;
+    }
+    .footer_content {
+        gap: 10%;
+    }
+}
+@media (max-width: 830px) {
+    header {
+        background-image: url(../assets/img/backgrounds/section1/background_4.png);
+    }
+    .card-data {
+        font-size: 10px;
+    }
+    .card-matchup {
+        font-size: 12px;
+    }
+    .card-type {
+        font-size: 9px;
+    }
+    .card-notification {
+        font-size: 10px;
+    }
+    .arsenal {
+        width: 45px;
+    }
+    .chelsea {
+        width: 53px;
+    }
+    .interface {
+        background-image: url(../assets/img/backgrounds/section3/interface-background3.png);
+    }
+    .interface-content h4 {
+        margin-top: 80px;
+    }
+    .interface-content a {
+        margin-bottom: 100px;
+    }
+    .carousel-item p {
+        font-size: 10px;
+    }
+    .previous {
+        left: -9.6%;
+    }
+    .teamup {
+        background-image: url(..//assets/img/backgrounds/section7/teamup_background3.png);
+    }
+    .teamup h2 {
+        margin-top: 30px;
+    }
+    .teamup .download-buttons {
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 775px) {
+    header {
+        background-image: url(../assets/img/backgrounds/section1/background_5.png);
+    }
+    .card-data {
+        font-size: 9px;
+    }
+    .card-matchup {
+        font-size: 11px;
+    }
+    .card-type {
+        font-size: 8px;
+    }
+    .card-notification {
+        font-size: 9px;
+    }
+    .arsenal {
+        width: 40px;
+    }
+    .chelsea {
+        width: 47px;
+    }
+    .previous {
+        left: -8.6%;
+    }
+    .teamup h2 {
+        margin-bottom: 25px;
+    }
+    .teamup .download-buttons {
+        margin-top: 30px;
+    }
+    .footer_content {
+        gap: 6%;
+    }
+}
 @media (max-width: 720px) {
     header {
         background-image: none;
@@ -640,16 +869,30 @@ nav a:hover {
         width: 145.69px;
     }
     .what-it-does {
-        background-image: url(../assets/img/background_gradient_mobile.png), url(../assets/img/what-it-does_background_mobile.png);
         flex-direction: column-reverse;
         align-items: center;
         background-position: left bottom;
+    }
+    .section2-background {
+        display: none;
+    }
+    .section2-background-mobile {
+        display: block;
+        position: absolute;
+        left: 0;
+        z-index: -999;
+    }
+    .section2-gradient-mobile {
+        transform: scaleY(1.1);
     }
     .text-content {
         width: 88.888%;
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    h2 {
+        font-size: 28px;
     }
     .text-content h4 {
         text-align: center;
@@ -695,7 +938,7 @@ nav a:hover {
         margin-top: 0;
         margin-left: 0;
         display: grid;
-        width: 77.25%;
+        width: 350px;
         background-color: white;
         grid-template-columns: 1fr 1fr;
         z-index: 2;
@@ -771,7 +1014,6 @@ nav a:hover {
     video {
         margin-left: 72.79px;
         top: -21.31px;
-        width: 77.25%;
         z-index: 1;
     }
     .interface {
@@ -798,6 +1040,8 @@ nav a:hover {
     }
     .mobile-background {
         display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
     .features {
         display: flex;
@@ -917,9 +1161,7 @@ nav a:hover {
         transition: ease-in-out 0.5s;
     }
     .teamup {
-        background-image: url(..//assets/img/teamup_background_mobile.png);
-        background-position: bottom;
-        background-repeat: no-repeat;
+        background-image: none;
         text-align: center;
     }
     .teamup h2 {
@@ -938,10 +1180,14 @@ nav a:hover {
     .teamup .download-buttons {
         margin-left: 0;
         margin-top: 37px;
-        margin-bottom: 307px;
+        margin-bottom: 46px;
     }
     .download-buttons p {
         margin-left: 0;
+    }
+    .teamup-background-mobile {
+        display: block;
+        margin: 0;
     }
     .footer_content {
         width: 88.888%;
@@ -973,5 +1219,13 @@ nav a:hover {
         width: 100%;
         gap: 0;
         justify-content: space-between;
+    }
+}
+@media (max-width: 550px) {
+    video {
+        width: 250px;
+    }
+    .card {
+        width: 250px;
     }
 }
